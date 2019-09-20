@@ -1,0 +1,13 @@
+
+A Krita addon to switch brush and fg/bg color with same action/keypress.
+
+
+Installation:
+
+Put .action file in KRITA/actions
+Put everything else in KRITA/py_krita
+
+where KRITA is the krita's resource folder.
+
+You can also symlink on *nix platforms, it should work.
+
