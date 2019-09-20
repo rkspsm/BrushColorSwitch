@@ -20,7 +20,6 @@ class BrushColSwitchExtension(Extension):
 
     @self.bc_switch.triggered.connect
     def on_bc_switch_trigger():
-      doc = krita.activeDocument()
       is_eraser = erase_action.isChecked()
 
       if is_eraser:
@@ -32,7 +31,6 @@ class BrushColSwitchExtension(Extension):
 
     @self.bc_switch_keep_eraser.triggered.connect
     def on_bc_switch_keep_eraser_trigger():
-      doc = krita.activeDocument()
       erase_action_state = erase_action.isChecked()
       switch_brush_action.trigger()
       switch_color_action.trigger()
