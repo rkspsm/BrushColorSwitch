@@ -20,9 +20,7 @@ class BrushColSwitchExtension(Extension):
 
     @self.bc_switch.triggered.connect
     def on_bc_switch_trigger():
-      is_eraser = erase_action.isChecked()
-
-      if is_eraser:
+      if erase_action.isChecked():
         switch_brush_action.trigger()
         switch_color_action.trigger()
       else:
