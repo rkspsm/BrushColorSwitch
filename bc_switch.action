@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionCollection version="2" name="Scripts">
+  <Actions category="Scripts">
+    <text>BrushColSwitch</text>
+
+    <Action name="bc_switch">
+      <icon></icon>
+      <text>Brush Color Switch</text>
+      <whatsThis></whatsThis>
+      <toolTip></toolTip>
+      <activationFlags>10000</activationFlags>
+      <activationConditions>0</activationConditions>
+      <shortcut></shortcut>
+      <isCheckable>false</isCheckable>
+      <statusTip></statusTip>
+    </Action>
+
+    <Action name="bc_switch_keep_eraser">
+      <icon></icon>
+      <text>Brush Color Switch(Keep Eraser)</text>
+      <whatsThis></whatsThis>
+      <toolTip></toolTip>
+      <activationFlags>10000</activationFlags>
+      <activationConditions>0</activationConditions>
+      <shortcut></shortcut>
+      <isCheckable>false</isCheckable>
+      <statusTip></statusTip>
+    </Action>
+
+  </Actions>
+</ActionCollection>

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=Krita/PythonPlugin
+X-KDE-Library=bc_switch
+X-Python-2-Compatible=false
+Name=BrushColSwitch
+Comment=Switch Brush and bg/fg color
+
