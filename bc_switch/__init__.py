@@ -13,13 +13,13 @@ class BrushColSwitchExtension(Extension):
     self.bc_switch_keep_eraser = \
         window.createAction("bc_switch_keep_eraser", "Brush Color Switch(Keep Eraser)")
 
-    krita = Krita.instance()
-    switch_brush_action = krita.action(switch_brush_action_name)
-    switch_color_action = krita.action(switch_color_action_name)
-    erase_action = krita.action(erase_action_name)
 
     @self.bc_switch.triggered.connect
     def on_bc_switch_trigger():
+      krita = Krita.instance()
+      switch_brush_action = krita.action(switch_brush_action_name)
+      switch_color_action = krita.action(switch_color_action_name)
+      erase_action = krita.action(erase_action_name)
       erase_action_state = erase_action.isChecked()
       switch_color_action.trigger()
       if erase_action_state != erase_action.isChecked():
@@ -28,6 +28,10 @@ class BrushColSwitchExtension(Extension):
 
     @self.bc_switch_keep_eraser.triggered.connect
     def on_bc_switch_keep_eraser_trigger():
+      krita = Krita.instance()
+      switch_brush_action = krita.action(switch_brush_action_name)
+      switch_color_action = krita.action(switch_color_action_name)
+      erase_action = krita.action(erase_action_name)
       erase_action_state = erase_action.isChecked()
       switch_brush_action.trigger()
       switch_color_action.trigger()
